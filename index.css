@@ -1,0 +1,392 @@
+.navbar {
+    position: relative;
+}
+
+
+ul {
+
+    list-style-type: none;
+    margin: 0 60px 0 60px;
+    padding: 0%;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+
+    float: left;
+}
+
+li a {
+
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+
+background-color: #111;
+}
+
+
+
+.container {
+    
+    
+    text-align: center;
+    height: 500px;
+    width: 1000px;
+    margin: 0 60 0 60;
+    padding: 0%;
+    position: relative;
+
+}
+.ad1{
+
+    margin: 0 60 0 60;
+    padding: 30px;
+    position: absolute;
+    float: left;
+  
+}
+
+.img1 {
+
+width: 650px;
+height: 424px;
+align-self: center;
+}
+
+
+.cssanimation, .cssanimation span {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.fadeInBottom { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+
+}
+
+
+.img3 {
+    width: 650px;
+    height: 424px;
+    animation:moveImage 6s reverse;
+
+  
+}
+
+@keyframes moveImage {
+    
+    100% {
+      transform: translateX(100%)
+    }
+
+    from {  
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
+.wtm {
+
+    position: absolute;
+    animation-name: wtm;
+    animation-timing-function: linear;
+    animation-duration: 6s;
+    margin-top: 200px;
+    margin-left: 150px;
+    font-weight: bolder;
+    animation-fill-mode: both;
+    animation-play-state: running;
+    
+    
+}
+
+@keyframes wtm {
+
+0% { font-size: 0px; color: #000; font-style: oblique; opacity: 1;}
+25% { font-size: 20px; color: aqua; font-style: oblique;}    
+50% { font-size: 35px; color: darkviolet; font-style: oblique;}
+75% {font-size:  50px; color: deeppink; font-style: oblique;}
+100% {font-size: 65px; color:blue; font-style: oblique; opacity: 0;}
+}
+
+
+.ani1 {
+    float:right;
+    animation: sus 3s infinite;
+    animation-delay: 6s;
+    animation-timing-function: linear;
+}
+
+@keyframes sus {
+
+        0% {
+          font-size: 0px; color: crimson; opacity: 0;}
+
+       25% { 
+          font-size: 10px; color: darkblue;}
+
+      50% { color: #333;
+           font-size: 12px;}
+           
+      75% { color:blue;
+            font-size:14px;}
+       
+      100% { color: aqua;
+              font-size: 16px; opacity: 1;} 
+
+}
+
+.sbm {
+    position: absolute;
+    animation-name: sbm;
+    animation-timing-function: linear;
+    animation-duration: 6s;
+    margin-top: 200px;
+    margin-left: 100px;
+    animation-delay: 3s;
+    
+}
+
+
+@keyframes sbm {
+
+    0% { font-size: 0px; color: #000; font-style: oblique ; opacity: 0;}
+    25% { font-size: 20px; color: white; font-style: oblique ; opacity: 0;}    
+    50% { font-size: 30px; color:#f4fc03; font-style: oblique ; opacity: 1;}
+    75% {font-size:  40px; color: deeppink; font-style: oblique; opacity: 1;}
+    100% {font-size: 50px; color:#73fc03; font-style: oblique ; opacity: 0;}
+    
+
+}
+
+
+    
+.student {
+
+    height: 200px;
+    float: right;
+    margin-top: 150px;
+    margin-left: 150px;
+    position: relative;
+    opacity: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+.container2 {
+
+    position: absolute;
+    width: auto;
+    height: 560px;
+    margin-left: 180px;
+    margin-right: 180px;
+    display: inline-block;
+}
+
+
+
+
+
+.paragraph{
+    
+    width:350px;
+    height:550px;
+    float: left;
+    position: relative;
+}
+
+p{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2vw;
+}
+
+
+.verticalad {
+    position: relative;
+    width: auto;
+    height: 450px;
+    text-align: center;
+    float:right ;
+    display: inline-flex;
+    margin-left: 300px;
+    margin-top: 40px;
+}
+
+
+
+@keyframes bganimate {
+
+
+
+
+    from {
+        opacity: 1;
+    }
+
+    to {opacity: 0;
+}
+}
+
+
+
+.ad2{
+   position: relative;
+    width: 250px;
+    height: 450px;
+    
+    background-image: url(Muriwai1.jpg);
+    animation: bganimate 15s;
+
+}
+
+
+.ad6{
+    position: absolute;
+    width: 250px;
+    height: 450px;
+    background-image: url(Muriwai4.jpg);
+    background-repeat: no-repeat;
+    background-size: 250px 450px;
+   
+    
+}
+ .hani {
+
+        animation: sbm5 5s;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 150px;
+
+        }
+
+        @keyframes sbm5 {
+        
+            100% { font-size: 35px; color: #000; font-style: oblique ; opacity: 1;}
+          90%{ font-size: 30px; color: white; font-style: oblique ; opacity: 1;} 
+         70%{ font-size: 25px; color: white; font-style: oblique ; opacity: 1;}       
+         50%{ font-size: 20px; color:#f4fc03; font-style: oblique ; opacity: 1;}
+        30%{font-size:  15px; color: deeppink; font-style: oblique; opacity: 1;}
+        0% {font-size: 10px; color:#73fc03; font-style: oblique ; opacity: 0;}
+        }
+
+
+        
+        @keyframes sbm2 {
+        
+            0% { font-size: 5px; color: #000; font-style: oblique ; opacity: 0;}
+           10% { font-size: 10px; color: #000; font-style: oblique ; opacity: 0;}
+            30%{ font-size: 15px; color: white; font-style: oblique ; opacity: 1;} 
+            50%{ font-size: 20px; color: white; font-style: oblique ; opacity: 1;}       
+            70%{ font-size: 25px; color:#f4fc03; font-style: oblique ; opacity: 1;}
+             90%{font-size:  30px; color: deeppink; font-style: oblique; opacity: 1;}
+            100% {font-size: 35px; color:#73fc03; font-style: oblique ; opacity: 0;}
+        }
+
+
+.hani2 {
+
+    margin-top:150px;
+    animation: sbm2 6s infinite;
+    text-align: center;
+    animation-delay: 4s;
+    
+
+}
+
+.hani3 {
+    margin-top:139px;
+    animation: sbm3 8s;
+    text-align: center;
+    animation-delay: 8s;
+    
+}
+
+@keyframes sbm3 {
+    
+   10% { font-size: 5px; color: #000; font-style: oblique ; opacity: 0;}
+    30%{ font-size: 8px; color: white; font-style: oblique ; opacity: 1;} 
+    50%{ font-size: 14px; color: white; font-style: oblique ; opacity: 1;}       
+    70%{ font-size: 18px; color:#f4fc03; font-style: oblique ;}
+     90%{font-size:  20px; color: deeppink; font-style: oblique;}
+    100% {font-size: 24px; color:#73fc03; font-style: oblique ; opacity: 0;}
+}
+
+.hani4 {
+    animation: bganimate2;
+    animation-delay: 10s;
+    animation-iteration-count: 2;
+
+}
+
+
+.booking {
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    width: auto;
+    height: 100px;
+    text-align: center;
+    position: static;
+}
+
+
+.button {
+    
+    border-radius: 5px;
+    background:linear-gradient(#3D94f6, #2d5380);
+    height: 40px;
+    line-height: 1px;
+    color: cornsilk;
+    font-family: 'Raleway', sans-serif;
+    width: 160px;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 50px;
+
+    
+}
+
+.footer{
+   
+    height: 35px;
+    width: 100%;
+    color: black;
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin: 0 auto;
+    text-align: center;
+
+
+}

@@ -1,0 +1,205 @@
+<Doctype html!>
+    <html>
+      <head>
+        <title> Booking Page</title>
+      </head>
+    
+      <link rel="stylesheet" type="text/css" href="form.css">
+      
+      <script src="script.js" defer></script> 
+  <body>
+
+
+    <!--Nav Bar-->
+
+    <div>
+      <ul>
+          <li><a class="active" href="index.html">Welcome to Muriwai Beach</a></li>
+          <li><a href="#form">Contact</a></li>
+          <li><a href="Storyboard.html">StoryBoard</a></li>
+        </ul>
+    </div>
+
+    <!--Form Text-->
+
+<div class="div1">
+  <h1>Muriwai Visit Booking Page </h1>
+</div>
+
+
+    <!--Form-->
+
+
+    <form action="mailto:bhatta11@myunitec.ac.nz" class="form" id="form" method="POST">
+<div class="div2"> 
+<h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Fill your details below</h1>
+
+</div>
+
+      <!--Progress Bar-->
+
+  <div class="progressbar">
+    
+  <div class="progress-step progress-step-active"></div>
+  <div class="progress-step"></div>
+  <div class="progress-step"></div>
+  <div class="progress-step"></div> 
+
+  <div class="progress" id="progress"></div>
+  </div>
+
+    <!--First Page-->
+
+  <div class="form-step form-step-active">
+  <div>  
+     <label>Name:</label>
+       <input type="text" name="FirstName" id="fn" placeholder="First Name" >  
+  </div>
+  <div>  
+     <label>Last Name:</label>
+       <input type="text" name="LastName" id="ln" placeholder="Last Name" >  
+  </div>
+  <div>  
+     <label>Date of Birth:</label>
+        <input type="date" name="dateofbirth" id="dob" >  
+  </div>
+  <div>  
+     <label>Phone:</label>
+        <input type="number" name="number" id="number" placeholder="Phone Number">  
+  </div>
+  <div>  
+     <label>Time when Visiting:</label>
+        <input type="time" name="time" id="time" placeholder="Select Time">  
+  </div>
+
+    <!--First Buttons-->
+
+  <div>
+     <button type="button" name="prv" id="prv" class="button prv" disabled >Previous </button>
+         <button type="button" name="nxt" id="nxt" class="button nxt">Next</button>
+               <button type="button" name="fin" id="fin" class="button fin" disabled>Finish  </button>
+  </div>
+ </div>
+
+  <!--Second Page-->
+   
+  <div class="form-step">
+   <div>  
+      <label>Number of Adults</label>
+          <input type="number" name="NoOfAdults" id="noa" >  
+   </div>
+    <div>  
+      <label>Number of Children</label>
+          <select name="children" id="children">
+                   <option value="0">0</option>
+                   <option value="1">1</option>  
+                   <option value="2">2</option>
+                   <option value="3">3</option> 
+                   <option value="4">4</option>
+                   <option value="5">5</option>  
+                   <option value="6">6</option>       
+          </select>            
+   </div>
+   <div>  
+       <label>Booking Date</label>
+           <input type="date" name="arrival" id="arrival" >  
+   </div>
+   <div>  
+       <label>Leaving Date</label>
+           <input type="date" name="leaving" id="leave" >  
+    </div>
+
+    <!--Second Page Buttons-->
+
+    <div>
+      <button type="button" name="prv" id="prv" class="button prv" >Previous </button>
+        <button type="button" name="nxt" id="nxt" class="button nxt">Next</button>
+            <button type="button" name="fin" id="fin" class="button fin" disabled>Finish  </button>
+    </div>
+    </div>
+
+         <!--Third Page-->
+
+    <div class="form-step">         
+    <div>  
+        <p>Please check the equipments required</p>
+            <input type="checkbox" name="Hair" id="hr" style="width: 10%; display:inline; margin-top: 0.5rem;"> 
+              <label  style="display: inline; margin-top: 0.5rem;"> Hair Dryer</label>
+            <input type="checkbox" name="TV" id="tv" style="width: 10%; display:inline; margin-top: 0.5rem;"> 
+               <label  style="display: inline; margin-top: 0.5rem;" >TV</label>
+            <input type="checkbox" name="telephone" id="tele" style="width: 10%; display:inline; margin-top: 0.5rem;" > 
+               <label  style="display: inline; margin-top: 0.5rem;"> Telephone</label> 
+            <input type="checkbox" name="swim" id="sm" style="width: 10%; display:inline; margin-top: 0.5rem;"> 
+            <label  style="display: inline; margin-top: 0.5rem;"> Swimming </label>
+    </div>
+     <div>
+        <p> Do you require Cooking facilities</p>
+      <input type="radio" name="ye" id="ye " style="width: 10%; display:inline; margin-top: 0.5rem;">
+          <label for="ye"  style="display: inline; margin-top: 0.5rem;">Yes</label>
+        <input type="radio" name="ye" id="ye" style="width: 10%; display:inline; margin-top: 0.5rem;">
+             <label for="ye"  style="display: inline; margin-top: 0.5rem;">No</label>
+        
+    </div>
+    <div>  
+         <p> You must agree to the national conservative right to follow proper conduct and steps to keep the surrounding safe.</p>
+               <label  style="display: inline; margin-top: 0.5rem;">Yes</label>
+             <input type="checkbox" name="agree" id="agree" style="width: 10%; display:inline; margin-top: 0.5rem;" >  
+    </div>
+
+    <!--Third Page Buttons-->
+
+     <div>
+         <button type="button" name="prv" id="prv" class="button prv" >Previous </button>
+           <button type="button" name="nxt" id="nxt" class="button nxt">Next</button>
+             <button type="button" name="fin" id="fin" class="button fin" disabled>Finish  </button>
+     </div>
+     </div>
+
+          <!--Last Page-->
+
+     <div class="form-step">
+
+     <div> 
+        <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 20px; color: gray; text-align: center; padding-top: 5px; padding-bottom: 5px;">Thank you for choosing us, we give away t-shirts around when you leave the lodge.
+           <br> <br>Please fill the details below for a free t-shirt :)
+        </p>
+     </div>
+     <div>
+         <label style="display: inline; margin-top: 10px;">Size</label>
+                <select name="size" id="size" style="display: inline; margin-top: 5px; margin-bottom: 10px;">
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                    <option value="XL">X-Large</option>
+                    <option value="XXL">XX-Large</option>
+                </select>
+     </div>
+     <div>  
+         <label style="display: inline; margin-top: 10px; ">Choose any color : </label>
+             <input type="color" name="color" id="color" style="width: 10%; display:inline; margin-top: 5px; padding: 0px; width: 5%; border-radius: 0%;" >  
+     </div>
+     <div> 
+         
+          <p>How was your overall booking experience?</p>
+               <label style="display: inline; text-align: center;">1</label>
+                  <input type="range" name="range" id="range" style="width:80%; display: inline;" >
+                    <label style="display: inline; text-align: center;">10</label>
+     </div>
+     
+      <!--Final Page Buttons-->
+      
+      <div>
+          <button type="button" name="prv" id="prv" class="button prv" >Previous </button>
+            <button type="button" name="nxt" id="nxt" class="button nxt" disabled>Next</button>
+               <button type="submit" name="fin" id="fin" class="button fin" >Finish  </button>
+    </div>
+    </div>
+    </form>
+
+        <!--Footer-->
+   
+     <div class="footer">
+              <p>© All rights reserverd</p>
+     </div>
+</body>
+ </html>
